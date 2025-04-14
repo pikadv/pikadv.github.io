@@ -414,10 +414,11 @@ article .icon {
 	border-radius: 2rem;
 	border: rgb(53, 53, 53) 0.1rem solid;
 	border-color: rgb(163, 163, 163);
-	background: (250, 250, 250);
+	background: rgb(250, 250, 250);
 	gap: 1rem;
 	margin: 2rem auto;
-	padding: 0.5rem;
+	padding: 0.05rem 1rem; /* Increased padding to prevent items from being cut */
+	box-sizing: border-box; /* Ensure padding is included in the element's dimensions */
 }
 
 .contact-info-container {
