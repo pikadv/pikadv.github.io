@@ -284,6 +284,10 @@ section {
 	position: relative;
 }
 
+#about h1 {
+	margin-bottom: 1rem;
+}
+
 .about-containers {
 	gap: 2rem;
 	margin-bottom: 2rem;
