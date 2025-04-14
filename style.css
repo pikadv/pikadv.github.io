@@ -9,6 +9,7 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
 }
 
 html {
@@ -171,26 +172,15 @@ section {
 
 .profile__pic-container {
 	display: flex;
-	height: 300px; /* Ensure equal width and height */
 	width: 300px;
-}
-
-.profile__pic-container img {
-	border-radius: 50%; /* Make the profile picture circular */
-	object-fit: cover; /* Ensure the image fits within the circular frame */
-	width: 100%; /* Ensure the image fills the container */
-}
-
-.section__pic-container {
-	display: flex;
 	height: 300px;
-	width: 300px;
 	margin: auto 0;
 }
 
-.section__pic-container img {
+.profile__pic-container img {
 	object-fit: cover;
-	min-width: 100%;
+	border-radius: 50%; /* Make the profile picture circular */
+	width: 100%;
 }
 
 .section__text {
@@ -212,7 +202,7 @@ section {
 }
 
 .title {
-	font-size: 3rem;
+	font-size: 3rem; /* Retain the same size as before */
 	text-align: center;
 }
 
@@ -284,28 +274,46 @@ section {
 	position: relative;
 }
 
-#about h1 {
+#about .title {
 	margin-bottom: 1rem;
+}
+
+.section-container {
+	gap: 4rem;
+	height: 80%;
+}
+
+.about-pic {
+	border-radius: 2rem;
+}
+
+.section__pic-container {
+	width: 400px;
+	height: 400px;
+	margin: auto;
+}
+
+.section__pic-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.about-details-container,
+.about-containers {
+	display: flex;
+}
+.about-details-container {
+	justify-content: center;
+	flex-direction: column;
 }
 
 .about-containers {
 	gap: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
-}
-
-.about-details-container {
-	justify-content: center;
-	flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-	display: flex;
-}
-
-.about-pic {
-	border-radius: 2rem;
 }
 
 .arrow {
@@ -322,17 +330,6 @@ section {
 	border: rgb(53, 53, 53) 0.1rem solid;
 	border-color: rgb(163, 163, 163);
 	text-align: center;
-}
-
-.section-container {
-	gap: 4rem;
-	height: 80%;
-}
-
-.section__pic-container {
-	height: 400px;
-	width: 400px;
-	margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
