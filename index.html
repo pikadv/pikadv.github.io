@@ -3,449 +3,301 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<meta name="google-site-verification" content="YWiWl-Bd0Ka2gRXVCtmvm5PUAoscjsbHMBajqAAcn60" />
-		<title>Tajbiul Azim - pikadv</title>
-		<!-- Stylesheets -->
+		<link
+			rel="stylesheet"
+			href="reset.css" />
 		<link
 			rel="stylesheet"
 			href="style.css" />
-		<link
-			rel="stylesheet"
-			href="mediaqueries.css" />
+		<title>pikadv - Tajbiul Azim</title>
 	</head>
 	<body>
-		<!-- Desktop Navigation -->
-		<nav id="desktop-nav">
-			<div class="logo">Tajbiul Azim</div>
-			<div>
-				<ul class="nav-links">
-					<li><a href="#about">About</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<!-- Hamburger Navigation -->
-		<nav id="hamburger-nav">
-			<div class="logo">Tajbiul Azim</div>
-			<div class="hamburger-menu">
-				<div
-					class="hamburger-icon"
-					onclick="toggleMenu()">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div class="menu-links">
-					<li>
+		<header>
+			<div class="title-section">
+				<div class="title-container">
+					<div class="title">
 						<a
-							href="#about"
-							onclick="toggleMenu()"
-							>About</a
+							href="index.html"
+							class="title-link"
+							>Tajbiul Azim</a
 						>
-					</li>
-					<li>
+					</div>
+					<div class="subtitle">
 						<a
-							href="#experience"
-							onclick="toggleMenu()"
-							>Experience</a
+							href="index.html"
+							class="title-link"
+							>/ Developer</a
 						>
-					</li>
-					<li>
-						<a
-							href="#projects"
-							onclick="toggleMenu()"
-							>Projects</a
-						>
-					</li>
-					<li>
-						<a
-							href="#contact"
-							onclick="toggleMenu()"
-							>Contact</a
-						>
-					</li>
-				</div>
-			</div>
-		</nav>
-
-		<!-- Profile Section -->
-		<section id="profile">
-			<div class="profile__pic-container">
-				<img
-					src="./assets/profile-pic.png"
-					alt="Profile picture"
-					draggable="false" />
-			</div>
-			<div class="section__text">
-				<p class="section__text__p1">Hello, I'm</p>
-				<h1 class="title">Tajbiul Azim (pikadv)</h1>
-				<p class="section__text__p2">Frontend Developer</p>
-				<!-- Removed the contact info button -->
-				<div id="socials-container">
-					<img
-						src="./assets/facebook.png"
-						alt="My Facebook profile"
-						class="icon"
-						onclick="location.href='https://www.facebook.com/pikadv/'"
-						draggable="false" />
-					<img
-						src="./assets/linkedin.png"
-						alt="My LinkedIn profile"
-						class="icon"
-						onclick="location.href='https://linkedin.com/in/tajbiul'"
-						draggable="false" />
-					<img
-						src="./assets/github.png"
-						alt="My Github profile"
-						class="icon"
-						onclick="location.href='https://github.com/pikadv'"
-						draggable="false" />
-				</div>
-			</div>
-		</section>
-
-		<!-- About Section -->
-		<section id="about">
-			<p class="section__text__p1">Get To Know More</p>
-			<h2 class="title">About Me</h2>
-			<div class="section-container">
-				<div class="section__pic-container">
-					<img
-						src="./assets/about-pic.jpg"
-						alt="Profile picture"
-						class="about-pic"
-						draggable="false" />
-				</div>
-				<div class="about-details-container">
-					<div class="about-containers about-details">
-						<div class="details-container">
-							<img
-								src="./assets/experience.png"
-								alt="Experience icon"
-								class="icon"
-								draggable="false" />
-							<h3>Experience</h3>
-							<p>1 year <br />Frontend Development</p>
-						</div>
-						<div class="details-container">
-							<img
-								src="./assets/education.png"
-								alt="Education icon"
-								class="icon"
-								draggable="false" />
-							<h3>Education</h3>
-							<p>BBA in Management</p>
-						</div>
-					</div>
-					<div class="text-container">
-						<p>
-							I am a web developer who turns caffeine into code and bugs into
-							features.
-						</p>
-						<p>
-							I believe in continuous learning and strive to improve my skills
-							every day.
-						</p>
-						<p>
-							My journey in web development is fueled by curiosity and a desire
-							to solve problems, one line of code at a time.
-						</p>
 					</div>
 				</div>
 			</div>
-			<img
-				src="./assets/arrow.png"
-				alt="Arrow icon"
-				class="icon arrow"
-				onclick="location.href='./#experience'"
-				draggable="false" />
-		</section>
-
-		<!-- Experience Section -->
-		<section id="experience">
-			<p class="section__text__p1">Explore My</p>
-			<h2 class="title">Experience</h2>
-			<div class="experience-details-container">
-				<div class="about-containers">
-					<!-- Frontend Development -->
-					<div class="details-container">
-						<h2 class="experience-sub-title">Frontend Development</h2>
-						<div class="article-container">
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>HTML</h3>
-									<p>Experienced</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>CSS</h3>
-									<p>Experienced</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>JavaScript</h3>
-									<p>Intermediate</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>TypeScript</h3>
-									<p>Basic</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>React</h3>
-									<p>Intermediate</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>Flutter</h3>
-									<p>Basic</p>
-								</div>
-							</article>
-						</div>
-					</div>
-
-					<!-- Backend Development -->
-					<div class="details-container">
-						<h2 class="experience-sub-title">Backend Development</h2>
-						<div class="article-container">
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>MySQL</h3>
-									<p>Intermediate</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>PHP</h3>
-									<p>Intermediate</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>Firebase</h3>
-									<p>Basic</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>Node JS</h3>
-									<p>Intermediate</p>
-								</div>
-							</article>
-							<article>
-								<img
-									src="./assets/checkmark.png"
-									alt="Experience icon"
-									class="icon"
-									draggable="false" />
-								<div>
-									<h3>Git</h3>
-									<p>Intermediate</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-			<img
-				src="./assets/arrow.png"
-				alt="Arrow icon"
-				class="icon arrow"
-				onclick="location.href='./#projects'"
-				draggable="false" />
-		</section>
-
-		<!-- Projects Section -->
-		<section id="projects">
-			<p class="section__text__p1">Browse My Recent</p>
-			<h2 class="title">Projects</h2>
-			<div class="experience-details-container">
-				<div class="about-containers">
-					<!-- Project One -->
-					<div class="details-container color-container">
-						<div class="article-container">
-							<img
-								src="./assets/wip.png"
-								alt="Project 1"
-								class="project-img"
-								draggable="false" />
-						</div>
-						<h2 class="experience-sub-title project-title">Project One</h2>
-						<div class="btn-container">
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com/'">
-								Github
-							</button>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com/'">
-								Live Demo
-							</button>
-						</div>
-					</div>
-
-					<!-- Project Two -->
-					<div class="details-container color-container">
-						<div class="article-container">
-							<img
-								src="./assets/wip-2.png"
-								alt="Project 2"
-								class="project-img"
-								draggable="false" />
-						</div>
-						<h2 class="experience-sub-title project-title">Project Two</h2>
-						<div class="btn-container">
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com/'">
-								Github
-							</button>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com/'">
-								Live Demo
-							</button>
-						</div>
-					</div>
-
-					<!-- Project Three -->
-					<div class="details-container color-container">
-						<div class="article-container">
-							<img
-								src="./assets/wip-3.png"
-								alt="Project 3"
-								class="project-img"
-								draggable="false" />
-						</div>
-						<h2 class="experience-sub-title project-title">Project Three</h2>
-						<div class="btn-container">
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com/'">
-								Github
-							</button>
-							<button
-								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com/'">
-								Live Demo
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<img
-				src="./assets/arrow.png"
-				alt="Arrow icon"
-				class="icon arrow"
-				onclick="location.href='./#contact'"
-				draggable="false" />
-		</section>
-
-		<!-- Contact Section -->
-		<section id="contact">
-			<p class="section__text__p1">Get in Touch</p>
-			<h2 class="title">Contact Me</h2>
-			<div class="contact-info-upper-container">
-				<div class="contact-info-container">
-					<img
-						src="./assets/email.png"
-						alt="Email icon"
-						class="icon contact-icon email-icon"
-						draggable="false" />
-					<p><a href="mailto:pikadv@outlook.com">pikadv@outlook.com</a></p>
-				</div>
-				<div class="contact-info-container">
-					<img
-						src="./assets/linkedin.png"
-						alt="LinkedIn icon"
-						class="icon contact-icon"
-						draggable="false" />
-					<p><a href="https://linkedin.com/in/tajbiul">LinkedIn</a></p>
-				</div>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<nav>
-				<div class="nav-links-container">
-					<ul class="nav-links">
-						<li><a href="#about">About</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
+			<div class="nav-section">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a
+								href="index.html"
+								class="nav-link"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="about.html"
+								class="nav-link"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="projects.html"
+								class="nav-link"
+								>Projects</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="contact.html"
+								class="nav-link"
+								>Contact</a
+							>
+						</li>
 					</ul>
+				</nav>
+				<div
+					id="mode-switch"
+					class="toggle-switch"
+					tabindex="0"
+					aria-label="Toggle dark mode">
+					<div class="toggle-track">
+						<div class="toggle-thumb">
+							<span class="icon-sun">
+								<!-- Sun SVG (new, bold and simple) -->
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="gold"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle
+										cx="12"
+										cy="12"
+										r="5" />
+									<g
+										stroke="gold"
+										stroke-width="2">
+										<line
+											x1="12"
+											y1="2"
+											x2="12"
+											y2="4" />
+										<line
+											x1="12"
+											y1="20"
+											x2="12"
+											y2="22" />
+										<line
+											x1="4.22"
+											y1="4.22"
+											x2="5.64"
+											y2="5.64" />
+										<line
+											x1="18.36"
+											y1="18.36"
+											x2="19.78"
+											y2="19.78" />
+										<line
+											x1="2"
+											y1="12"
+											x2="4"
+											y2="12" />
+										<line
+											x1="20"
+											y1="12"
+											x2="22"
+											y2="12" />
+										<line
+											x1="4.22"
+											y1="19.78"
+											x2="5.64"
+											y2="18.36" />
+										<line
+											x1="18.36"
+											y1="5.64"
+											x2="19.78"
+											y2="4.22" />
+									</g>
+								</svg>
+							</span>
+							<span class="icon-moon">
+								<!-- Moon SVG (crescent, bold) -->
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M21 12.5A9 9 0 1 1 11.5 3c0 5.25 4.25 9.5 9.5 9.5z"
+										fill="#f4f4f4"
+										stroke="#f4f4f4"
+										stroke-width="2" />
+								</svg>
+							</span>
+						</div>
+					</div>
 				</div>
-			</nav>
-			<p>Copyright &#169; 2025 pikadv. All Rights Reserved.</p>
+			</div>
+		</header>
+		<main>
+			<div class="hero-section">
+				<div class="box-section"></div>
+				<div class="hero-content">
+					<div class="hero-content-main">
+						<img
+							class="hero-img"
+							src="src/profile-pic.png"
+							alt="Portait of the person in topic" />
+						<h1 class="hero-title">Tajbiul Azim</h1>
+						<h2 class="hero-subtitle">
+							Web Developer | SEO Analyst | Business Student
+						</h2>
+						<div class="socials hero-socials">
+							<a
+								href="https://www.linkedin.com/in/tajbiul"
+								class="social-link">
+								<img
+									src="src/socials/linkedin.avif"
+									alt="LinkedIn"
+									class="social-icon" />
+							</a>
+							<a
+								href="https://www.facebook.com/pikadv"
+								class="social-link">
+								<img
+									src="src/socials/facebook.avif"
+									alt="Facebook"
+									class="social-icon" />
+							</a>
+							<a
+								href="https://www.twitter.com/pikadv99"
+								class="social-link">
+								<img
+									src="src/socials/twitter.avif"
+									alt="Twitter"
+									class="social-icon" />
+							</a>
+							<a
+								href="https://www.instagram.com/pikadv99"
+								class="social-link">
+								<img
+									src="src/socials/instagram.avif"
+									alt="Instagram"
+									class="social-icon" />
+							</a>
+						</div>
+					</div>
+					<div class="hero-content-sub">
+						<div class="hero-intro-big">Hello</div>
+						<div class="hero-intro-small">Get to know me</div>
+						<div class="hero-btn-section">
+							<a
+								class="btn hero-btn"
+								href="about.html"
+								>About Me</a
+							>
+							<a
+								class="btn hero-btn alt-btn"
+								href="projects.html"
+								>Projects</a
+							>
+						</div>
+						<p class="hero-description">
+							I'm a Web Developer and Digital Marketing enthusiast, eager to
+							learn and explore new technologies. As a Business Management
+							student, I enjoy understanding how things work and refining ideas.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-left">
+				<p class="footer-text">© 2023 pikadv</p>
+				<p class="footer-text">All rights reserved</p>
+			</div>
+			<div class="footer-right">
+				<div class="footer-right-one">
+					<p class="footer-text">Write</p>
+					<p class="footer-text">info@mysite.com (placeholder)</p>
+				</div>
+				<div class="footer-right-two">
+					<p class="footer-text">Call</p>
+					<p class="footer-text">+880 123 456 7890 (placeholder)</p>
+				</div>
+				<div class="footer-right-three">
+					<p class="footer-text">Follow</p>
+					<div class="socials footer-socials">
+						<a
+							href="https://www.linkedin.com/in/tajbiul"
+							class="social-link">
+							<img
+								src="src/socials/linkedin.avif"
+								alt="LinkedIn"
+								class="social-icon" />
+						</a>
+						<a
+							href="https://www.facebook.com/pikadv"
+							class="social-link">
+							<img
+								src="src/socials/facebook.avif"
+								alt="Facebook"
+								class="social-icon" />
+						</a>
+						<a
+							href="https://www.twitter.com/pikadv99"
+							class="social-link">
+							<img
+								src="src/socials/twitter.avif"
+								alt="Twitter"
+								class="social-icon" />
+						</a>
+						<a
+							href="https://www.instagram.com/pikadv99"
+							class="social-link">
+							<img
+								src="src/socials/instagram.avif"
+								alt="Instagram"
+								class="social-icon" />
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>
-
-		<!-- JavaScript -->
-		<script src="script.js"></script>
+		<script>
+			// Set default mode to light
+			if (!document.body.classList.contains("dark-mode")) {
+				document.body.classList.add("light-mode");
+			}
+			const modeSwitch = document.getElementById("mode-switch");
+			modeSwitch.addEventListener("click", function () {
+				if (document.body.classList.contains("light-mode")) {
+					document.body.classList.remove("light-mode");
+					document.body.classList.add("dark-mode");
+					modeSwitch.classList.add("toggled");
+				} else {
+					document.body.classList.remove("dark-mode");
+					document.body.classList.add("light-mode");
+					modeSwitch.classList.remove("toggled");
+				}
+			});
+			modeSwitch.addEventListener("keydown", function (e) {
+				if (e.key === "Enter" || e.key === " ") {
+					modeSwitch.click();
+				}
+			});
+		</script>
 	</body>
 </html>

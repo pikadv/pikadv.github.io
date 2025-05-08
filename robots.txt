@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /assets/
-Disallow: /mediaqueries.css
-Disallow: /script.js
-Disallow: /style.css
-
-Sitemap: https://pikadv.github.io/sitemap.xml
