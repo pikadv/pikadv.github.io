@@ -85,7 +85,7 @@ body {
 	background-color: var(--background-color);
 	color: var(--dark-color);
 	line-height: 1.6;
-	min-width: 900px;
+	min-width: 1000px;
 }
 img {
 	max-width: 100%;
