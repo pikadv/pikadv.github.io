@@ -85,7 +85,7 @@ body {
 	background-color: var(--background-color);
 	color: var(--dark-color);
 	line-height: 1.6;
-	min-width: 1000px;
+	min-width: 900px;
 }
 img {
 	max-width: 100%;
@@ -110,7 +110,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-width: 1000px;
+	min-width: 900px;
 	z-index: 1000;
 	background-color: var(--background-color);
 	display: flex;
@@ -176,18 +176,18 @@ main .box-section {
 	background-color: var(--background-color);
 }
 main .hero-content {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	display: flex;
 	background-color: var(--background-color);
-	width: 70%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 60%;
+	left: 50%;
+	max-width: 70%;
 }
 main .hero-content-main {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	background-color: var(--secondary-color);
 	width: 400px;
