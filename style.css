@@ -110,7 +110,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-width: 900px;
+	min-width: 1000px;
 	z-index: 1000;
 	background-color: var(--background-color);
 	display: flex;
