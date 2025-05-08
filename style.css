@@ -36,6 +36,28 @@
 	background-color: var(--accent-color);
 }
 
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+a,
+button,
+input,
+textarea,
+[draggable],
+*::selection {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 /* Scrollbar Styles */
 *::-webkit-scrollbar {
 	width: 8px;
@@ -70,6 +92,8 @@ img {
 	height: auto;
 	display: block;
 	margin: 0 auto;
+	-webkit-user-drag: none;
+	pointer-events: auto;
 }
 a {
 	text-decoration: none;
