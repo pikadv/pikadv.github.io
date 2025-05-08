@@ -3,4 +3,4 @@ Disallow: /src/
 Disallow: /script.js
 Disallow: /style.css
 
-Sitemap: https://pikadv.me/sitemap.xml
+Sitemap: https://www.pikadv.me/sitemap.xml
