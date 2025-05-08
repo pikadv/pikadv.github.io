@@ -1,6 +1,6 @@
 User-agent: *
+Disallow: 
 Disallow: /src/
 Disallow: /script.js
 Disallow: /style.css
-
-Sitemap: https://www.pikadv.me/sitemap.xml
+Sitemap: https://pikadv.me/sitemap.xml
