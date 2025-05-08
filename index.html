@@ -5,9 +5,24 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="keywords"
+			content="pikadv, Tajbiul Azim, Web Developer in Kushtia, SEO Analyst in Kushtia" />
+		<meta
+			name="description"
+			content="Tajbiul Azim is a Web Developer and SEO Analyst based in Kushtia, passionate about digital marketing and technology." />
+		<meta
+			property="og:title"
+			content="Tajbiul Azim - Web Developer & SEO Analyst" />
+		<meta
+			property="og:description"
+			content="Web Developer and Digital Marketing enthusiast based in Kushtia." />
+		<meta
+			property="og:url"
+			content="https://pikadv.me/" />
 		<link
-			rel="stylesheet"
-			href="reset.css" />
+			rel="canonical"
+			href="https://pikadv.me/" />
 		<link
 			rel="stylesheet"
 			href="style.css" />
@@ -167,7 +182,10 @@
 						<div class="socials hero-socials">
 							<a
 								href="https://www.linkedin.com/in/tajbiul"
-								class="social-link">
+								class="social-link"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="LinkedIn profile">
 								<img
 									src="src/socials/linkedin.avif"
 									alt="LinkedIn"
@@ -175,7 +193,10 @@
 							</a>
 							<a
 								href="https://www.facebook.com/pikadv"
-								class="social-link">
+								class="social-link"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Facebook profile">
 								<img
 									src="src/socials/facebook.avif"
 									alt="Facebook"
@@ -183,7 +204,10 @@
 							</a>
 							<a
 								href="https://www.twitter.com/pikadv99"
-								class="social-link">
+								class="social-link"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Twitter profile">
 								<img
 									src="src/socials/twitter.avif"
 									alt="Twitter"
@@ -191,7 +215,10 @@
 							</a>
 							<a
 								href="https://www.instagram.com/pikadv99"
-								class="social-link">
+								class="social-link"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="Instagram profile">
 								<img
 									src="src/socials/instagram.avif"
 									alt="Instagram"
@@ -242,7 +269,10 @@
 					<div class="socials footer-socials">
 						<a
 							href="https://www.linkedin.com/in/tajbiul"
-							class="social-link">
+							class="social-link"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="LinkedIn profile">
 							<img
 								src="src/socials/linkedin.avif"
 								alt="LinkedIn"
@@ -250,7 +280,10 @@
 						</a>
 						<a
 							href="https://www.facebook.com/pikadv"
-							class="social-link">
+							class="social-link"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="Facebook profile">
 							<img
 								src="src/socials/facebook.avif"
 								alt="Facebook"
@@ -258,7 +291,10 @@
 						</a>
 						<a
 							href="https://www.twitter.com/pikadv99"
-							class="social-link">
+							class="social-link"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="Twitter profile">
 							<img
 								src="src/socials/twitter.avif"
 								alt="Twitter"
@@ -266,7 +302,10 @@
 						</a>
 						<a
 							href="https://www.instagram.com/pikadv99"
-							class="social-link">
+							class="social-link"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="Instagram profile">
 							<img
 								src="src/socials/instagram.avif"
 								alt="Instagram"
@@ -276,28 +315,23 @@
 				</div>
 			</div>
 		</footer>
-		<script>
-			// Set default mode to light
-			if (!document.body.classList.contains("dark-mode")) {
-				document.body.classList.add("light-mode");
+		<script src="script.js"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Tajbiul Azim",
+				"url": "https://pikadv.me/",
+				"image": "https://pikadv.me/src/profile-pic.png",
+				"sameAs": [
+					"https://www.linkedin.com/in/tajbiul",
+					"https://www.facebook.com/pikadv",
+					"https://www.twitter.com/pikadv99",
+					"https://www.instagram.com/pikadv99"
+				],
+				"jobTitle": "Web Developer & SEO Analyst",
+				"description": "Web Developer and Digital Marketing enthusiast based in Kushtia."
 			}
-			const modeSwitch = document.getElementById("mode-switch");
-			modeSwitch.addEventListener("click", function () {
-				if (document.body.classList.contains("light-mode")) {
-					document.body.classList.remove("light-mode");
-					document.body.classList.add("dark-mode");
-					modeSwitch.classList.add("toggled");
-				} else {
-					document.body.classList.remove("dark-mode");
-					document.body.classList.add("light-mode");
-					modeSwitch.classList.remove("toggled");
-				}
-			});
-			modeSwitch.addEventListener("keydown", function (e) {
-				if (e.key === "Enter" || e.key === " ") {
-					modeSwitch.click();
-				}
-			});
 		</script>
 	</body>
 </html>

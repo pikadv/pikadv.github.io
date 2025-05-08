@@ -23,53 +23,41 @@
 }
 
 /* Global Styles */
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-
 *::before,
 *::after {
 	box-sizing: border-box;
 }
-
 *::selection {
 	background-color: var(--accent-color);
 }
 
+/* Scrollbar Styles */
 *::-webkit-scrollbar {
 	width: 8px;
 	background-color: var(--background-color);
 }
-
 *::-webkit-scrollbar-thumb {
 	background-color: var(--accent-color);
 	border-radius: 4px;
 }
-
-*::-webkit-scrollbar-track {
-	background-color: var(--background-color);
-}
-
-*::-webkit-scrollbar-corner {
-	background-color: var(--background-color);
-}
-
-*::-webkit-scrollbar-corner:hover {
-	background-color: var(--secondary-color);
-}
-
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner,
 *::-webkit-scrollbar-button {
 	background-color: var(--background-color);
+}
+*::-webkit-scrollbar-corner:hover {
+	background-color: var(--secondary-color);
 }
 
 html {
 	font-size: 16px;
 	scroll-behavior: smooth;
 }
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: var(--background-color);
@@ -77,20 +65,17 @@ body {
 	line-height: 1.6;
 	min-width: 900px;
 }
-
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
 }
-
 a {
 	text-decoration: none;
 	color: inherit;
 	transition: color 0.3s ease;
 }
-
 a:hover {
 	color: var(--accent-color);
 }
@@ -104,65 +89,52 @@ header {
 	min-width: 900px;
 	z-index: 1000;
 	background-color: var(--background-color);
-}
-
-header,
-footer {
 	display: flex;
 	justify-content: space-between;
 	height: 150px;
 	padding: 0 2rem;
 }
-
 header .title-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-
 header .title-container {
 	display: flex;
 	align-items: flex-end;
 	gap: 1rem;
 }
-
 header .title {
 	font-weight: bold;
 	font-size: 2em;
 	line-height: 1;
 }
-
 header .subtitle {
 	font-weight: lighter;
 	line-height: 1.2;
 }
-
 header .nav-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
 }
-
 header .nav-list {
 	list-style: none;
 	display: flex;
 	gap: 1.5rem;
 }
-
 header .nav-list li a {
 	font-size: 1.1em;
 	padding: 0.5rem;
 	color: var(--dark-color);
 	transition: color 0.3s ease;
 }
-
 header .nav-list li a:hover {
 	color: var(--accent-color);
 }
 
 /* Main Styles */
-
 main .hero-section {
 	position: relative;
 	display: flex;
@@ -172,7 +144,6 @@ main .hero-section {
 	text-align: center;
 	height: 1000px;
 }
-
 main .box-section {
 	position: absolute;
 	height: 100%;
@@ -180,7 +151,6 @@ main .box-section {
 	right: 0;
 	background-color: var(--background-color);
 }
-
 main .hero-content {
 	position: absolute;
 	top: 60%;
@@ -190,7 +160,6 @@ main .hero-content {
 	background-color: var(--background-color);
 	width: 70%;
 }
-
 main .hero-content-main {
 	display: flex;
 	flex-direction: column;
@@ -199,12 +168,10 @@ main .hero-content-main {
 	background-color: var(--secondary-color);
 	width: 400px;
 }
-
 main .hero-content-sub {
 	flex: 1;
 	text-align: left;
 }
-
 main .hero-img {
 	margin: 2rem auto;
 	width: 200px;
@@ -213,12 +180,10 @@ main .hero-img {
 	border-radius: 50%;
 	object-position: center;
 }
-
 main .hero-title {
 	font-size: 1.8em;
 	font-weight: bold;
 }
-
 main .hero-subtitle {
 	margin: 2rem auto;
 	padding: 0 2rem;
@@ -226,7 +191,6 @@ main .hero-subtitle {
 	font-weight: 300;
 	line-height: 1.5;
 }
-
 main .hero-socials,
 .socials {
 	display: flex;
@@ -237,31 +201,26 @@ main .hero-socials,
 	padding: 1rem;
 	width: 100%;
 }
-
 main .social-icon {
 	width: 30px;
 }
-
 main .hero-intro-big {
 	font-size: 5em;
 	font-weight: bold;
 	margin: 0 2rem;
 	margin-top: 2rem;
 }
-
 main .hero-intro-small {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin: 0 2rem;
 }
-
 main .hero-btn-section {
 	display: flex;
 	justify-content: flex-start;
 	gap: 1.5rem;
 	margin: 2rem;
 }
-
 main .hero-btn {
 	display: flex;
 	min-width: max-content;
@@ -274,7 +233,6 @@ main .hero-btn {
 	font-weight: bold;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 main .alt-btn {
 	background-color: var(--background-color);
 	border: #52796f 2px solid;
@@ -284,12 +242,10 @@ main .alt-btn {
 	font-weight: bold;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 main .hero-btn:hover {
 	background-color: var(--accent-color);
 	color: var(--background-color);
 }
-
 main .hero-description {
 	margin: 2rem;
 	font-size: 1em;
@@ -329,7 +285,7 @@ main .hero-description {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 2px; /* Add padding for better centering */
+	padding: 2px;
 }
 .icon-sun {
 	display: block;
@@ -365,19 +321,23 @@ main .hero-description {
 }
 
 /* Footer Styles */
+footer {
+	display: flex;
+	justify-content: space-between;
+	height: 150px;
+	padding: 0 2rem;
+}
 footer .footer-section {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
 footer .footer-left {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	font-size: smaller;
 }
-
 footer .footer-right {
 	display: flex;
 	justify-content: center;
@@ -385,27 +345,23 @@ footer .footer-right {
 	gap: 2rem;
 	font-size: smaller;
 }
-
 footer .footer-right .footer-text:first-child {
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 0.5rem;
 }
-
 footer .footer-right-three {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
 footer .footer-socials,
 .socials {
 	margin: 0;
 	padding: 0;
 	background-color: var(--background-color);
 }
-
 footer .social-icon {
 	width: 20px;
 }
