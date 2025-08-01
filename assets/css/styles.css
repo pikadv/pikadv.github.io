@@ -4,7 +4,7 @@
 :root {
 	--header-height: 3rem;
 	--font-semi: 600;
-	--hue-color: 355;
+	--hue-color: 365;
 	--first-color: hsl(var(--hue-color), 89%, 60%);
 	--second-color: hsl(var(--hue-color), 56%, 12%);
 	--body-font: "Poppins", sans-serif;
@@ -326,8 +326,58 @@ img {
 	border-radius: 0.5rem;
 	z-index: var(--z-back);
 }
+.skills__smm {
+	width: 75%;
+	background-color: var(--first-color);
+	height: 0.25rem;
+	border-radius: 0.5rem;
+	z-index: var(--z-back);
+}
+.skills__seo {
+	width: 85%;
+	background-color: var(--first-color);
+	height: 0.25rem;
+	border-radius: 0.5rem;
+	z-index: var(--z-back);
+}
+.skills__sem {
+	width: 70%;
+	background-color: var(--first-color);
+	height: 0.25rem;
+	border-radius: 0.5rem;
+	z-index: var(--z-back);
+}
+.skills__technicalseo {
+	width: 80%;
+	background-color: var(--first-color);
+	height: 0.25rem;
+	border-radius: 0.5rem;
+	z-index: var(--z-back);
+}
 .skills__img {
 	border-radius: 0.5rem;
+	margin-right: 1rem;
+	width: 100%;
+	max-width: none;
+	display: block;
+}
+@media screen and (max-width: 767px) {
+	.skills__img {
+		display: block;
+		margin: 2rem auto 1rem auto;
+		max-width: 90%;
+	}
+	.skills__img--dev {
+		/* Only show after dev skills on mobile */
+	}
+	.skills__img--dm {
+		/* Only show after DM skills on mobile */
+	}
+}
+@media screen and (min-width: 768px) {
+	.skills__img {
+		margin: 2rem 0 1rem 0;
+	}
 }
 
 /* ===== WORK =====*/
@@ -541,14 +591,12 @@ html.dark-mode .l-header {
 }
 
 body.dark-mode .nav__menu,
-html.dark-mode .nav__menu,
+html.dark-mode .nav__menu {
+	background-color: #23272f;
+}
 body.dark-mode .nav__link,
-html.dark-mode .nav__link,
-body.dark-mode .nav__logo,
-html.dark-mode .nav__logo,
-body.dark-mode .nav__toggle,
-html.dark-mode .nav__toggle {
-	color: #e0e0e0;
+html.dark-mode .nav__link {
+	color: #fff;
 }
 
 body.dark-mode .section-title,
