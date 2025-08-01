@@ -7,12 +7,20 @@
 			content="width=device-width, initial-scale=1.0" />
 		<title>Terms and Services | Tajbiul Azim (pikadv)</title>
 		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet" />
+		<link
 			rel="icon"
 			type="image/png"
 			href="assets/img/logo.png" />
 		<link
 			rel="stylesheet"
 			href="assets/css/styles.css" />
+		<script>
+			if (localStorage.getItem("darkMode") === "1") {
+				document.documentElement.classList.add("dark-mode");
+			}
+		</script>
 	</head>
 	<body>
 		<header class="l-header">
@@ -79,7 +87,29 @@
 					>pikadv</a
 				>
 			</p>
-			<p class="footer__copy">&copy; pikadv. All rights reserved</p>
+			<p class="footer__copy">
+				&#169; pikadv. All rights reserved |
+				<a
+					href="terms.html"
+					class="footer__link"
+					>Terms</a
+				>
+				|
+				<a
+					href="privacy.html"
+					class="footer__link"
+					>Privacy</a
+				>
+			</p>
 		</footer>
+		<!-- Dark Mode Toggle -->
+		<button
+			id="darkModeToggle"
+			aria-label="Toggle dark mode"
+			class="darkmode-toggle"
+			type="button">
+			<i class="bx bx-moon"></i>
+		</button>
+		<script src="assets/js/darkmode.js"></script>
 	</body>
 </html>

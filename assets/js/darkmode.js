@@ -5,6 +5,7 @@
 	const icon = darkModeToggle.querySelector("i");
 	function setDarkMode(enabled) {
 		document.body.classList.toggle("dark-mode", enabled);
+		document.documentElement.classList.toggle("dark-mode", enabled);
 		icon.className = enabled ? "bx bx-sun" : "bx bx-moon";
 		localStorage.setItem("darkMode", enabled ? "1" : "0");
 	}

@@ -90,6 +90,12 @@
 		<link
 			rel="stylesheet"
 			href="assets/css/styles.css" />
+
+		<script>
+			if (localStorage.getItem("darkMode") === "1") {
+				document.documentElement.classList.add("dark-mode");
+			}
+		</script>
 	</head>
 	<body>
 		<!--===== HEADER =====-->
