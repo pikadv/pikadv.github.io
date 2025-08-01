@@ -73,6 +73,16 @@ img {
 	display: block;
 }
 
+/* Remove tap highlight on mobile */
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Remove focus outline for mouse/touch, keep for keyboard */
+*:focus {
+	outline: none;
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
 	position: relative;
