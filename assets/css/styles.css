@@ -4,26 +4,24 @@
 :root {
 	--header-height: 3rem;
 	--font-semi: 600;
-	/*===== Colores =====*/
-	/*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-	/* HSL color mode */
 	--hue-color: 355;
 	--first-color: hsl(var(--hue-color), 89%, 60%);
 	--second-color: hsl(var(--hue-color), 56%, 12%);
-	/*===== Fuente y tipografia =====*/
 	--body-font: "Poppins", sans-serif;
 	--big-font-size: 2rem;
 	--h2-font-size: 1.25rem;
 	--normal-font-size: 0.938rem;
 	--smaller-font-size: 0.75rem;
-	/*===== Margenes =====*/
 	--mb-2: 1rem;
 	--mb-4: 2rem;
 	--mb-5: 2.5rem;
 	--mb-6: 3rem;
-	/*===== z index =====*/
 	--z-back: -10;
 	--z-fixed: 100;
+	--bg-color: #fff;
+	--text-color: var(--second-color);
+	--footer-bg: var(--second-color);
+	--footer-text: #fff;
 }
 @media screen and (min-width: 968px) {
 	:root {
@@ -49,7 +47,8 @@ body {
 	margin: var(--header-height) 0 0 0;
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
-	color: var(--second-color);
+	color: var(--text-color);
+	background: var(--bg-color);
 }
 
 h1,
@@ -358,8 +357,8 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-	background-color: var(--second-color);
-	color: #fff;
+	background-color: var(--footer-bg);
+	color: var(--footer-text);
 	text-align: center;
 	font-weight: var(--font-semi);
 	padding: 2rem 0;
@@ -378,6 +377,14 @@ img {
 }
 .footer__copy {
 	font-size: var(--smaller-font-size);
+}
+.footer__title-link {
+	color: #fff;
+	text-decoration: none;
+}
+.footer__link {
+	color: #fff;
+	text-decoration: underline;
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -503,4 +510,67 @@ img {
 .link[rel~="icon"] {
 	border-radius: 50%;
 	overflow: hidden;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+	--bg-color: #23272f;
+	--text-color: #e0e0e0;
+	--first-color: hsl(var(--hue-color), 89%, 60%);
+	--second-color: #e0e0e0;
+	--footer-bg: #181c22;
+	--footer-text: #fff;
+}
+
+body.dark-mode .l-header {
+	background-color: #23272f;
+	box-shadow: 0 1px 4px rgba(20, 20, 20, 0.25);
+}
+
+body.dark-mode .nav__menu,
+body.dark-mode .nav__link,
+body.dark-mode .nav__logo,
+body.dark-mode .nav__toggle {
+	color: #e0e0e0;
+}
+
+body.dark-mode .section-title {
+	color: var(--first-color);
+}
+
+body.dark-mode .skills__data,
+body.dark-mode .work__img {
+	box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode .contact__input {
+	background: #23272f;
+	color: #e0e0e0;
+	border-color: #444;
+}
+
+body.dark-mode .button {
+	background: var(--first-color);
+	color: #fff;
+}
+
+body.dark-mode .footer__link,
+body.dark-mode .footer__title-link {
+	color: #fff;
+}
+
+#darkModeToggle {
+	position: fixed;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	z-index: 999;
+	background: var(--first-color);
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	font-size: 1.5rem;
 }

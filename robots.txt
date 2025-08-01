@@ -1,3 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
 Sitemap: https://www.pikadv.me/sitemap.xml
+# Prevent indexing of development or private directories (uncomment if needed)
+# Disallow: /private/
+# Disallow: /tmp/
+# Disallow: /test/

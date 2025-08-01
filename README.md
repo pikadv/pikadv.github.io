@@ -1,29 +1,34 @@
 # pikadv.github.io
 
-A simple personal website for Tajbiul Azim (pikadv).
+A simple, responsive personal website for Tajbiul Azim (pikadv).
 
 ## About
 
-This site is a small test project to host my personal, temporary page. It shares a bit about my skills, some work samples, and ways to get in touch.
+This is a minimal portfolio and contact site, featuring skills, work samples, and ways to connect. Built for fast deployment and easy customization.
 
 ## Features
 
-- Clean, responsive design
-- Basic SEO and structured data
-- Social links
-- Contact form (not connected to email)
+- Clean, mobile-friendly design
+- SEO meta tags and structured data (JSON-LD)
+- Social media links
+- Contact form (Formspree integration)
+- Terms and Privacy Policy pages
+- Sitemap and robots.txt for search engines
 
 ## Technologies Used
 
-- HTML, CSS, JavaScript
-- Boxicons
-- ScrollReveal
+- HTML5, CSS3, JavaScript (vanilla)
+- Boxicons for icons
+- ScrollReveal for animations
 
-## How to Use
+## File Structure
 
-1. Clone or fork this repository.
-2. Edit `index.html` and assets as you like.
-3. You can use GitHub Pages or any static host to publish it.
+- `index.html` – Main site
+- `terms.html` – Terms and Services
+- `privacy.html` – Privacy Policy
+- `sitemap.xml` – Sitemap for search engines
+- `robots.txt` – Crawler directives
+- `assets/` – Images, CSS, JS
 
 ## License
 
@@ -31,4 +36,4 @@ See [LICENSE](LICENSE) for details.
 
 ---
 
-Thanks for visiting. [pikadv.me](https://www.pikadv.me/)
+Thanks for visiting! [pikadv.me](https://www.pikadv.me/)

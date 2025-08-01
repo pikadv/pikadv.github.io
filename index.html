@@ -402,7 +402,13 @@
 
 		<!--===== FOOTER =====-->
 		<footer class="footer">
-			<p class="footer__title">pikadv</p>
+			<p class="footer__title">
+				<a
+					href="index.html"
+					class="footer__title-link"
+					>pikadv</a
+				>
+			</p>
 			<div class="footer__social">
 				<a
 					href="https://facebook.com/pikadv"
@@ -420,7 +426,20 @@
 					><i class="bx bxl-twitter"></i
 				></a>
 			</div>
-			<p class="footer__copy">&#169; pikadv. All rights reserved</p>
+			<p class="footer__copy">
+				&#169; pikadv. All rights reserved |
+				<a
+					href="terms.html"
+					class="footer__link"
+					>Terms</a
+				>
+				|
+				<a
+					href="privacy.html"
+					class="footer__link"
+					>Privacy</a
+				>
+			</p>
 		</footer>
 
 		<script type="application/ld+json">
@@ -542,5 +561,15 @@
 
 		<!--===== MAIN JS =====-->
 		<script src="assets/js/main.js"></script>
+
+		<!-- Dark Mode Toggle -->
+		<button
+			id="darkModeToggle"
+			aria-label="Toggle dark mode">
+			<i class="bx bx-moon"></i>
+		</button>
+		<script src="assets/js/darkmode.js"></script>
+
+		</script>
 	</body>
 </html>
