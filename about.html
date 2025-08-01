@@ -51,7 +51,7 @@
 		<link
 			rel="icon"
 			type="image/png"
-			href="assets/img/favicon.png" />
+			href="assets/img/logo.png" />
 		<link
 			rel="stylesheet"
 			href="assets/css/styles.css" />
@@ -60,8 +60,29 @@
 			href="assets/css/about.css" />
 		<!-- Add Boxicons CSS for icons -->
 		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.9/css/boxicons.min.css" />
+			href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet" />
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-LVXF6EEVEW"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-LVXF6EEVEW");
+		</script>
+		<meta
+			name="google-site-verification"
+			content="YWiWl-Bd0Ka2gRXVCtmvm5PUAoscjsbHMBajqAAcn60" />
+		<!-- Dark mode script -->
+		<script>
+			if (localStorage.getItem("darkMode") === "1") {
+				document.documentElement.classList.add("dark-mode");
+			}
+		</script>
 	</head>
 	<body>
 		<header class="l-header">
@@ -83,6 +104,14 @@
 						<img
 							src="assets/img/about.jpg"
 							alt="Tajbiul Azim (pikadv) profile portrait" />
+						<a
+							href="https://github.com/pikadv"
+							class="about__img-icon"
+							target="_blank"
+							rel="noopener"
+							aria-label="GitHub profile"
+							><i class="bx bxl-github"></i
+						></a>
 					</div>
 					<div class="about__info">
 						<h2 class="about__subtitle">
@@ -194,6 +223,84 @@
 						"item": "https://www.pikadv.me/about.html"
 					}
 				]
+			}
+		</script>
+		<!-- Person Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Tajbiul Azim (pikadv)",
+				"url": "https://www.pikadv.me/",
+				"image": "https://www.pikadv.me/assets/img/about.jpg",
+				"logo": "https://www.pikadv.me/assets/img/logo.png",
+				"sameAs": [
+					"https://www.linkedin.com/in/tajbiul",
+					"https://www.facebook.com/pikadv",
+					"https://www.twitter.com/pikadv99",
+					"https://www.instagram.com/pikadv99"
+				],
+				"jobTitle": "Web Developer & Digital Marketer",
+				"description": "Web Development and Digital Marketing enthusiast",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Kushtia",
+					"addressCountry": "Bangladesh"
+				}
+			}
+		</script>
+		<!-- FAQ Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				"mainEntity": [
+					{
+						"@type": "Question",
+						"name": "Who is Tajbiul Azim (pikadv)?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Tajbiul Azim, also known as pikadv, is a Web Developer and Digital Marketer based in Kushtia, Bangladesh, passionate about web development and digital marketing."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "What is pikadv and why use it?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "pikadv is the personal brand of Tajbiul Azim, representing his expertise in web development and digital marketing. Using pikadv means working with a dedicated professional focused on delivering user-friendly websites and effective digital marketing solutions."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "What services does Tajbiul Azim (pikadv) offer?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "Tajbiul Azim (pikadv) offers web development, digital marketing, SEO analysis, and market analysis services."
+						}
+					},
+					{
+						"@type": "Question",
+						"name": "How can I contact Tajbiul Azim (pikadv)?",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "You can contact Tajbiul Azim (pikadv) through the contact form on this website or via social media links provided in the footer."
+						}
+					}
+				]
+			}
+		</script>
+		<!-- WebSite Structured Data -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"url": "https://www.pikadv.me/",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://www.pikadv.me/?s={search_term_string}",
+					"query-input": "required name=search_term_string"
+				}
 			}
 		</script>
 		<footer class="footer">
