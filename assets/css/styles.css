@@ -301,10 +301,20 @@ img {
 	width: 85%;
 }
 .skills__js {
+	width: 80%;
+}
+.skills__react {
 	width: 65%;
 }
-.skills__ux {
-	width: 85%;
+.skills__firebase {
+	width: 60%;
+}
+.skills__htmlcss {
+	width: 90%;
+	background-color: var(--first-color);
+	height: 0.25rem;
+	border-radius: 0.5rem;
+	z-index: var(--z-back);
 }
 .skills__img {
 	border-radius: 0.5rem;
