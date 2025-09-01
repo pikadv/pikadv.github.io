@@ -367,12 +367,6 @@ img {
 		margin: 2rem auto 1rem auto;
 		max-width: 90%;
 	}
-	.skills__img--dev {
-		/* Only show after dev skills on mobile */
-	}
-	.skills__img--dm {
-		/* Only show after DM skills on mobile */
-	}
 }
 @media screen and (min-width: 768px) {
 	.skills__img {
@@ -568,10 +562,6 @@ img {
 }
 
 /* ===== FAVICON ===== */
-.link[rel~="icon"] {
-	border-radius: 50%;
-	overflow: hidden;
-}
 
 /* Dark mode styles */
 body.dark-mode,
