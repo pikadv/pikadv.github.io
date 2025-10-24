@@ -235,6 +235,11 @@ img {
 }
 
 /*BUTTONS*/
+.home__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
 .button {
 	display: inline-block;
 	background-color: var(--first-color);
