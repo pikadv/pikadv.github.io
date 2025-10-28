@@ -9,8 +9,11 @@
 		icon.className = enabled ? "bx bx-sun" : "bx bx-moon";
 		localStorage.setItem("darkMode", enabled ? "1" : "0");
 	}
-	// Load preference
-	setDarkMode(localStorage.getItem("darkMode") === "1");
+	// Load preference (default to dark if unset)
+	const storedPreference = localStorage.getItem("darkMode");
+	const shouldEnableDarkMode =
+		storedPreference === null ? true : storedPreference === "1";
+	setDarkMode(shouldEnableDarkMode);
 	darkModeToggle.onclick = function () {
 		setDarkMode(!document.body.classList.contains("dark-mode"));
 	};

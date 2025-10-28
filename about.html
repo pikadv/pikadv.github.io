@@ -79,7 +79,8 @@
 			content="YWiWl-Bd0Ka2gRXVCtmvm5PUAoscjsbHMBajqAAcn60" />
 		<!-- Dark mode script -->
 		<script>
-			if (localStorage.getItem("darkMode") === "1") {
+			const storedPreference = localStorage.getItem("darkMode");
+			if (storedPreference === null || storedPreference === "1") {
 				document.documentElement.classList.add("dark-mode");
 			}
 		</script>

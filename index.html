@@ -92,7 +92,8 @@
 			href="assets/css/styles.css" />
 
 		<script>
-			if (localStorage.getItem("darkMode") === "1") {
+			const storedPreference = localStorage.getItem("darkMode");
+			if (storedPreference === null || storedPreference === "1") {
 				document.documentElement.classList.add("dark-mode");
 			}
 		</script>
