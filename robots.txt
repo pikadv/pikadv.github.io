@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.pikadv.me/sitemap.xml
+Sitemap: https://pikadv.github.io/sitemap.xml
 # Prevent indexing of development or private directories (uncomment if needed)
 # Disallow: /private/
 # Disallow: /tmp/

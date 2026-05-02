@@ -36,4 +36,5 @@ See [LICENSE](LICENSE) for details.
 
 ---
 
-Thanks for visiting! [pikadv.me](https://www.pikadv.me/)
+Thanks for visiting! [pikadv.github.io](https://pikadv.github.io/)
+
