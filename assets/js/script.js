@@ -241,8 +241,42 @@ const renderPortfolioRepos = function () {
 	updatePortfolioPagination();
 };
 
+const processAndRenderRepos = function (reposData) {
+	portfolioState.repos = reposData
+		.filter(function (repo) {
+			return !repo.fork && !repo.archived;
+		})
+		.sort(function (leftRepo, rightRepo) {
+			return new Date(rightRepo.pushed_at) - new Date(leftRepo.pushed_at);
+		});
+
+	if (portfolioState.repos.length === 0) {
+		if (portfolioLoading) {
+			portfolioLoading.innerHTML =
+				'<p class="project-category">No public repositories were found.</p>';
+		}
+		return;
+	}
+
+	portfolioState.currentPage = 0;
+	renderPortfolioRepos();
+};
+
 const loadPortfolioRepos = async function () {
 	if (!portfolioList) {
+		return;
+	}
+
+	const cacheKey = "github_portfolio_repos";
+	const cacheTimeKey = "github_portfolio_time";
+	const cacheDuration = 60 * 60 * 1000; // 1 hour in milliseconds
+
+	// Check if we have valid cached data
+	const cachedRepos = localStorage.getItem(cacheKey);
+	const cachedTime = localStorage.getItem(cacheTimeKey);
+
+	if (cachedRepos && cachedTime && Date.now() - cachedTime < cacheDuration) {
+		processAndRenderRepos(JSON.parse(cachedRepos));
 		return;
 	}
 
@@ -258,35 +292,22 @@ const loadPortfolioRepos = async function () {
 		}
 
 		const repos = await response.json();
-		portfolioState.repos = repos
-			.filter(function (repo) {
-				return !repo.fork && !repo.archived;
-			})
-			.sort(function (leftRepo, rightRepo) {
-				return (
-					new Date(rightRepo.pushed_at) - new Date(leftRepo.pushed_at)
-				);
-			});
 
-		if (portfolioState.repos.length === 0) {
-			if (portfolioLoading) {
-				portfolioLoading.innerHTML =
-					'<p class="project-category">No public repositories were found.</p>';
-			}
-			return;
-		}
+		// Save the fresh data and timestamp to localStorage
+		localStorage.setItem(cacheKey, JSON.stringify(repos));
+		localStorage.setItem(cacheTimeKey, Date.now());
 
-		portfolioState.currentPage = 0;
-		renderPortfolioRepos();
+		processAndRenderRepos(repos);
 	} catch (error) {
-		if (portfolioLoading) {
+		// Fallback: If API fails but we have expired cache, use it anyway
+		if (cachedRepos) {
+			processAndRenderRepos(JSON.parse(cachedRepos));
+		} else if (portfolioLoading) {
 			portfolioLoading.innerHTML =
 				'<p class="project-category">GitHub repositories could not be loaded right now.</p>';
 		}
 	}
 };
-
-loadPortfolioRepos();
 
 for (let i = 0; i < portfolioFilterBtns.length; i++) {
 	portfolioFilterBtns[i].addEventListener("click", function () {
@@ -510,8 +531,6 @@ const loadBlogPosts = function () {
 	document.body.appendChild(script);
 };
 
-loadBlogPosts();
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
@@ -531,3 +550,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
 		}
 	});
 }
+
+// Ensure elements are loaded before fetching data
+document.addEventListener("DOMContentLoaded", function () {
+	loadPortfolioRepos();
+	loadBlogPosts();
+});
